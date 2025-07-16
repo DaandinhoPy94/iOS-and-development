@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		85E31F322E2077BF00F8B540 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E31F1C2E2077BE00F8B540 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85E31F232E2077BE00F8B540;
+			remoteInfo = AIBusinessDashboard;
+		};
+		85E31F3C2E2077BF00F8B540 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E31F1C2E2077BE00F8B540 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85E31F232E2077BE00F8B540;
+			remoteInfo = AIBusinessDashboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85E31F242E2077BE00F8B540 /* AIBusinessDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIBusinessDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85E31F312E2077BF00F8B540 /* AIBusinessDashboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIBusinessDashboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85E31F3B2E2077BF00F8B540 /* AIBusinessDashboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIBusinessDashboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		85E31F262E2077BE00F8B540 /* AIBusinessDashboard */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AIBusinessDashboard;
+			sourceTree = "<group>";
+		};
+		85E31F342E2077BF00F8B540 /* AIBusinessDashboardTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AIBusinessDashboardTests;
+			sourceTree = "<group>";
+		};
+		85E31F3E2E2077BF00F8B540 /* AIBusinessDashboardUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AIBusinessDashboardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85E31F212E2077BE00F8B540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85E31F2E2E2077BF00F8B540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85E31F382E2077BF00F8B540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85E31F1B2E2077BE00F8B540 = {
+			isa = PBXGroup;
+			children = (
+				85E31F262E2077BE00F8B540 /* AIBusinessDashboard */,
+				85E31F342E2077BF00F8B540 /* AIBusinessDashboardTests */,
+				85E31F3E2E2077BF00F8B540 /* AIBusinessDashboardUITests */,
+				85E31F252E2077BE00F8B540 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85E31F252E2077BE00F8B540 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85E31F242E2077BE00F8B540 /* AIBusinessDashboard.app */,
+				85E31F312E2077BF00F8B540 /* AIBusinessDashboardTests.xctest */,
+				85E31F3B2E2077BF00F8B540 /* AIBusinessDashboardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85E31F232E2077BE00F8B540 /* AIBusinessDashboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85E31F452E2077BF00F8B540 /* Build configuration list for PBXNativeTarget "AIBusinessDashboard" */;
+			buildPhases = (
+				85E31F202E2077BE00F8B540 /* Sources */,
+				85E31F212E2077BE00F8B540 /* Frameworks */,
+				85E31F222E2077BE00F8B540 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				85E31F262E2077BE00F8B540 /* AIBusinessDashboard */,
+			);
+			name = AIBusinessDashboard;
+			packageProductDependencies = (
+			);
+			productName = AIBusinessDashboard;
+			productReference = 85E31F242E2077BE00F8B540 /* AIBusinessDashboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85E31F302E2077BF00F8B540 /* AIBusinessDashboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85E31F482E2077BF00F8B540 /* Build configuration list for PBXNativeTarget "AIBusinessDashboardTests" */;
+			buildPhases = (
+				85E31F2D2E2077BF00F8B540 /* Sources */,
+				85E31F2E2E2077BF00F8B540 /* Frameworks */,
+				85E31F2F2E2077BF00F8B540 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85E31F332E2077BF00F8B540 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				85E31F342E2077BF00F8B540 /* AIBusinessDashboardTests */,
+			);
+			name = AIBusinessDashboardTests;
+			packageProductDependencies = (
+			);
+			productName = AIBusinessDashboardTests;
+			productReference = 85E31F312E2077BF00F8B540 /* AIBusinessDashboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		85E31F3A2E2077BF00F8B540 /* AIBusinessDashboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85E31F4B2E2077BF00F8B540 /* Build configuration list for PBXNativeTarget "AIBusinessDashboardUITests" */;
+			buildPhases = (
+				85E31F372E2077BF00F8B540 /* Sources */,
+				85E31F382E2077BF00F8B540 /* Frameworks */,
+				85E31F392E2077BF00F8B540 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85E31F3D2E2077BF00F8B540 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				85E31F3E2E2077BF00F8B540 /* AIBusinessDashboardUITests */,
+			);
+			name = AIBusinessDashboardUITests;
+			packageProductDependencies = (
+			);
+			productName = AIBusinessDashboardUITests;
+			productReference = 85E31F3B2E2077BF00F8B540 /* AIBusinessDashboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85E31F1C2E2077BE00F8B540 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					85E31F232E2077BE00F8B540 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					85E31F302E2077BF00F8B540 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 85E31F232E2077BE00F8B540;
+					};
+					85E31F3A2E2077BF00F8B540 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 85E31F232E2077BE00F8B540;
+					};
+				};
+			};
+			buildConfigurationList = 85E31F1F2E2077BE00F8B540 /* Build configuration list for PBXProject "AIBusinessDashboard" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85E31F1B2E2077BE00F8B540;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 85E31F252E2077BE00F8B540 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85E31F232E2077BE00F8B540 /* AIBusinessDashboard */,
+				85E31F302E2077BF00F8B540 /* AIBusinessDashboardTests */,
+				85E31F3A2E2077BF00F8B540 /* AIBusinessDashboardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85E31F222E2077BE00F8B540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85E31F2F2E2077BF00F8B540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85E31F392E2077BF00F8B540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85E31F202E2077BE00F8B540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85E31F2D2E2077BF00F8B540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85E31F372E2077BF00F8B540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85E31F332E2077BF00F8B540 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85E31F232E2077BE00F8B540 /* AIBusinessDashboard */;
+			targetProxy = 85E31F322E2077BF00F8B540 /* PBXContainerItemProxy */;
+		};
+		85E31F3D2E2077BF00F8B540 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85E31F232E2077BE00F8B540 /* AIBusinessDashboard */;
+			targetProxy = 85E31F3C2E2077BF00F8B540 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		85E31F432E2077BF00F8B540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 26SH87V73R;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		85E31F442E2077BF00F8B540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 26SH87V73R;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85E31F462E2077BF00F8B540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26SH87V73R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daan.aibusinessdashboard.AIBusinessDashboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85E31F472E2077BF00F8B540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26SH87V73R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daan.aibusinessdashboard.AIBusinessDashboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		85E31F492E2077BF00F8B540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26SH87V73R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daan.aibusinessdashboard.AIBusinessDashboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIBusinessDashboard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AIBusinessDashboard";
+			};
+			name = Debug;
+		};
+		85E31F4A2E2077BF00F8B540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26SH87V73R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daan.aibusinessdashboard.AIBusinessDashboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIBusinessDashboard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AIBusinessDashboard";
+			};
+			name = Release;
+		};
+		85E31F4C2E2077BF00F8B540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26SH87V73R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daan.aibusinessdashboard.AIBusinessDashboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AIBusinessDashboard;
+			};
+			name = Debug;
+		};
+		85E31F4D2E2077BF00F8B540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26SH87V73R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daan.aibusinessdashboard.AIBusinessDashboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AIBusinessDashboard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85E31F1F2E2077BE00F8B540 /* Build configuration list for PBXProject "AIBusinessDashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85E31F432E2077BF00F8B540 /* Debug */,
+				85E31F442E2077BF00F8B540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85E31F452E2077BF00F8B540 /* Build configuration list for PBXNativeTarget "AIBusinessDashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85E31F462E2077BF00F8B540 /* Debug */,
+				85E31F472E2077BF00F8B540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85E31F482E2077BF00F8B540 /* Build configuration list for PBXNativeTarget "AIBusinessDashboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85E31F492E2077BF00F8B540 /* Debug */,
+				85E31F4A2E2077BF00F8B540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85E31F4B2E2077BF00F8B540 /* Build configuration list for PBXNativeTarget "AIBusinessDashboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85E31F4C2E2077BF00F8B540 /* Debug */,
+				85E31F4D2E2077BF00F8B540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85E31F1C2E2077BE00F8B540 /* Project object */;
+}
