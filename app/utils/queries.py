@@ -7,7 +7,7 @@ from typing import List, Dict, Any, Optional
 from datetime import datetime, timedelta
 import logging
 
-# # from app.database import db
+from app.database import db
 
 logger = logging.getLogger(__name__)
 
@@ -116,13 +116,13 @@ class DashboardQueries:
             HAVING COUNT(o.order_id) > 0
         )
         SELECT 
-            COUNT(CASE WHEN days_since_last_order > 120 THEN 1 END) as high_risk_count,
-            COUNT(CASE WHEN days_since_last_order BETWEEN 60 AND 120 THEN 1 END) as medium_risk_count,
-            COUNT(CASE WHEN days_since_last_order < 60 THEN 1 END) as low_risk_count,
+            COUNT(CASE WHEN EXTRACT(DAYS FROM days_since_last_order) > 120 THEN 1 END) as high_risk_count,
+            COUNT(CASE WHEN EXTRACT(DAYS FROM days_since_last_order) BETWEEN 60 AND 120 THEN 1 END) as medium_risk_count,
+            COUNT(CASE WHEN EXTRACT(DAYS FROM days_since_last_order) < 60 THEN 1 END) as low_risk_count,
             COUNT(*) as total_analyzed,
             AVG(CASE 
-                WHEN days_since_last_order > 120 THEN 0.8
-                WHEN days_since_last_order > 60 THEN 0.5
+                WHEN EXTRACT(DAYS FROM days_since_last_order) > 120 THEN 0.8
+                WHEN EXTRACT(DAYS FROM days_since_last_order) > 60 THEN 0.5
                 ELSE 0.2
             END) as avg_risk
         FROM customer_activity

@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:iOS-and-development}",
+            "name": "Debug AIBusinessDashboard",
+            "program": "${workspaceFolder:iOS-and-development}/.build/debug/AIBusinessDashboard",
+            "preLaunchTask": "swift: Build Debug AIBusinessDashboard"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:iOS-and-development}",
+            "name": "Release AIBusinessDashboard",
+            "program": "${workspaceFolder:iOS-and-development}/.build/release/AIBusinessDashboard",
+            "preLaunchTask": "swift: Build Release AIBusinessDashboard"
+        }
+    ]
+}

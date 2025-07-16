@@ -9,7 +9,7 @@ import Foundation
 
 @MainActor
 class APIService: ObservableObject {
-    private let baseURL = "https://multi-database-2-production.up.railway.app"
+    private let baseURL = "http://localhost:8000"
     
     @Published var isLoading = false
     @Published var errorMessage: String?

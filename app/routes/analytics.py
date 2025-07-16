@@ -176,14 +176,14 @@ async def get_churn_predictions(
             recent_orders,
             -- Simplified churn score calculation
             CASE 
-                WHEN days_since_last_order > 120 THEN 0.9
-                WHEN days_since_last_order > 90 THEN 0.75
-                WHEN days_since_last_order > 60 AND recent_orders = 0 THEN 0.6
-                WHEN days_since_last_order > 30 AND recent_orders < 2 THEN 0.4
+                WHEN EXTRACT(DAYS FROM days_since_last_order) > 120 THEN 0.9
+                WHEN EXTRACT(DAYS FROM days_since_last_order) > 90 THEN 0.75
+                WHEN EXTRACT(DAYS FROM days_since_last_order) > 60 AND recent_orders = 0 THEN 0.6
+                WHEN EXTRACT(DAYS FROM days_since_last_order) > 30 AND recent_orders < 2 THEN 0.4
                 ELSE 0.2
             END as churn_probability
         FROM customer_metrics
-        WHERE days_since_last_order > 30  -- Focus on potentially churning
+        WHERE EXTRACT(DAYS FROM days_since_last_order) > 30  -- Focus on potentially churning
         ORDER BY churn_probability DESC, total_spent DESC
         LIMIT %s
         """

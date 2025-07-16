@@ -80,7 +80,7 @@ class Database:
             logger.info("Database connection pool closed")
 
 # Create global database instance
-# # db = Database() # Temporarily disabled # Temporarily disabled
+db = Database()
 
 # Helper functions for common queries
 def get_db():
@@ -95,3 +95,4 @@ async def check_database_health() -> bool:
     except Exception as e:
         logger.error(f"Database health check failed: {e}")
         return False
+

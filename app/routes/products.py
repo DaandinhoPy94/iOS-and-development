@@ -2,7 +2,7 @@
 """Product API endpoints"""
 
 from fastapi import APIRouter, HTTPException
-# # from app.database import db
+from app.database import db
 
 router = APIRouter()
 
@@ -41,7 +41,7 @@ async def get_products():
 """Analytics API endpoints"""
 
 from fastapi import APIRouter, HTTPException
-# # from app.database import db
+from app.database import db
 
 router = APIRouter()
 

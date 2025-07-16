@@ -7,7 +7,7 @@ from fastapi import APIRouter, HTTPException, Query
 from typing import Optional, List
 import logging
 
-# # from app.database import db
+from app.database import db
 from app.models import Customer, CustomerListResponse
 
 logger = logging.getLogger(__name__)
@@ -190,13 +190,13 @@ async def get_at_risk_customers(
         SELECT 
             *,
             CASE 
-                WHEN days_since_last_order > 120 THEN 0.8
-                WHEN days_since_last_order > 90 THEN 0.7
-                WHEN days_since_last_order > 60 THEN 0.5
+                WHEN EXTRACT(DAYS FROM days_since_last_order) > 120 THEN 0.8
+                WHEN EXTRACT(DAYS FROM days_since_last_order) > 90 THEN 0.7
+                WHEN EXTRACT(DAYS FROM days_since_last_order) > 60 THEN 0.5
                 ELSE 0.2
             END as churn_probability
         FROM customer_activity
-        WHERE days_since_last_order > 60  -- At risk threshold
+        WHERE EXTRACT(DAYS FROM days_since_last_order) > 60  -- At risk threshold
         ORDER BY churn_probability DESC, total_spent DESC
         LIMIT %s
         """

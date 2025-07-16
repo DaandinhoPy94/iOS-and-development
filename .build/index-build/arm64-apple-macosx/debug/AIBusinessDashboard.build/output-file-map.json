@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/daan/Python/iOS-and-development/.build/index-build/arm64-apple-macosx/debug/AIBusinessDashboard.build/master.swiftdeps"
+  },
+  "/Users/daan/Python/iOS-and-development/Sources/main.swift": {
+    "dependencies": "/Users/daan/Python/iOS-and-development/.build/index-build/arm64-apple-macosx/debug/AIBusinessDashboard.build/main.d",
+    "object": "/Users/daan/Python/iOS-and-development/.build/index-build/arm64-apple-macosx/debug/AIBusinessDashboard.build/main.swift.o",
+    "swiftmodule": "/Users/daan/Python/iOS-and-development/.build/index-build/arm64-apple-macosx/debug/AIBusinessDashboard.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/daan/Python/iOS-and-development/.build/index-build/arm64-apple-macosx/debug/AIBusinessDashboard.build/main.swiftdeps"
+  }
+}
