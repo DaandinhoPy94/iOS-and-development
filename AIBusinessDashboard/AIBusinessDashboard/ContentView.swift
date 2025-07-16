@@ -52,7 +52,8 @@ struct MetricCard: View {
     }
 }
 
-struct ContentView: View {
+// Separate the original dashboard into its own view
+struct DashboardView: View {
     @StateObject private var apiService = APIService()
     @State private var dashboardData: DashboardData = DashboardData.mockData
     @State private var refreshTimer: Timer?
@@ -150,6 +151,26 @@ struct ContentView: View {
                 refreshTimer?.invalidate()
             }
         }
+    }
+}
+
+// Main ContentView with TabView
+struct ContentView: View {
+    var body: some View {
+        TabView {
+            DashboardView()
+                .tabItem {
+                    Image(systemName: "gauge.medium")
+                    Text("Dashboard")
+                }
+            
+            ChartsView()
+                .tabItem {
+                    Image(systemName: "chart.line.uptrend.xyaxis")
+                    Text("Charts")
+                }
+        }
+        .accentColor(.blue)
     }
 }
 
