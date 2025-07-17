@@ -288,6 +288,13 @@ struct ContentView: View {
                     Text("Charts")
                 }
             
+            // 🔥 NIEUWE TAB: Advanced Charts
+            AdvancedChartsView()
+                .tabItem {
+                    Image(systemName: "chart.pie")
+                    Text("Advanced")
+                }
+            
             NavigationView {
                 CustomerListView()
             }
@@ -310,8 +317,4 @@ struct ContentView: View {
         }
         .accentColor(.blue)
     }
-}
-
-#Preview {
-    ContentView()
 }
