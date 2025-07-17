@@ -282,7 +282,7 @@ struct CustomerAnalyticsView: View {
             
             // Device Usage
             InsightCard(
-                icon: "iphone.and.ipad",
+                icon: "iphone",
                 title: "Device Preference",
                 value: viewModel.devicePreference,
                 color: .green
