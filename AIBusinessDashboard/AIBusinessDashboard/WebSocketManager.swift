@@ -7,7 +7,7 @@
 
 import Foundation
 import Combine
-import SwiftUI 
+import SwiftUI
 
 // WebSocket Message Types
 struct WebSocketMessage: Codable {
@@ -21,6 +21,8 @@ struct WebSocketMessage: Codable {
         case alert = "alert"
         case customerUpdate = "customer_update"
         case orderPlaced = "order_placed"
+        case connection = "connection"
+        case pong = "pong"
     }
 }
 
@@ -92,9 +94,11 @@ class WebSocketManager: NSObject, ObservableObject {
         }
         
         guard let url = URL(string: baseURL) else {
-            print("❌ Invalid WebSocket URL")
+            print("❌ Invalid WebSocket URL: \(baseURL)")
             return
         }
+        
+        print("🔌 Attempting WebSocket connection to: \(baseURL)")
         
         webSocketTask = urlSession.webSocketTask(with: url)
         webSocketTask?.resume()
@@ -187,6 +191,15 @@ class WebSocketManager: NSObject, ObservableObject {
             
         case .orderPlaced:
             handleNewOrder(message)
+            
+        case .connection:
+            // Handle connection confirmation
+            print("✅ WebSocket connection confirmed")
+            connectionStatus = "Connected"
+            
+        case .pong:
+            // Handle ping response
+            print("✅ Pong received")
         }
     }
     
