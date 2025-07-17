@@ -170,6 +170,13 @@ struct ContentView: View {
                     Text("Charts")
                 }
             
+            // NIEUWE TAB: Live Data
+            LiveDataView()
+                .tabItem {
+                    Image(systemName: "antenna.radiowaves.left.and.right")
+                    Text("Live")
+                }
+            
             NotificationSettingsView()
                 .tabItem {
                     Image(systemName: "bell.badge")

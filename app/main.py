@@ -15,6 +15,7 @@ import logging
 
 from app.config import settings
 from app.routes import dashboard, customers, products, analytics
+from app.routes import websocket
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -128,6 +129,12 @@ app.include_router(
     analytics.router,
     prefix="/api/v1/analytics",
     tags=["Analytics"]
+)
+
+app.include_router(
+    websocket.router,
+    prefix="",  # No prefix - WebSocket op root level
+    tags=["WebSocket"]
 )
 
 # Global exception handler
