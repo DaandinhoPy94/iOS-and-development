@@ -169,6 +169,12 @@ struct ContentView: View {
                     Image(systemName: "chart.line.uptrend.xyaxis")
                     Text("Charts")
                 }
+            
+            NotificationSettingsView()
+                .tabItem {
+                    Image(systemName: "bell.badge")
+                    Text("Alerts")
+                }
         }
         .accentColor(.blue)
     }
