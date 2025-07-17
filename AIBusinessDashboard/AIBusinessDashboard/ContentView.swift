@@ -102,6 +102,41 @@ struct DashboardView: View {
                     }
                     .padding(.horizontal)
                     
+                    // 🔥 NIEUWE SECTIE: Customer Quick Access
+                    VStack(alignment: .leading, spacing: 15) {
+                        HStack {
+                            Text("Top Customers")
+                                .font(.headline)
+                                .fontWeight(.semibold)
+                            
+                            Spacer()
+                            
+                            NavigationLink("View All") {
+                                CustomerListView()
+                            }
+                            .font(.caption)
+                            .foregroundColor(.blue)
+                        }
+                        
+                        // Top 3 customers preview
+                        VStack(spacing: 10) {
+                            ForEach(0..<3) { index in
+                                NavigationLink {
+                                    CustomerAnalyticsView(customerId: 100 + index)
+                                } label: {
+                                    CustomerQuickCard(
+                                        name: ["Sarah Johnson", "Mike Chen", "Emma Williams"][index],
+                                        tier: ["Platinum", "Gold", "Silver"][index],
+                                        value: [15420, 8750, 5230][index],
+                                        riskLevel: ["Low", "Medium", "High"][index]
+                                    )
+                                }
+                                .buttonStyle(PlainButtonStyle())
+                            }
+                        }
+                    }
+                    .padding(.horizontal)
+                    
                     // Refresh Button
                     Button("Refresh Data") {
                         Task {
@@ -154,6 +189,89 @@ struct DashboardView: View {
     }
 }
 
+// CustomerQuickCard Helper View
+struct CustomerQuickCard: View {
+    let name: String
+    let tier: String
+    let value: Int
+    let riskLevel: String
+    
+    var body: some View {
+        HStack {
+            // Customer avatar
+            Circle()
+                .fill(tierColor.opacity(0.2))
+                .frame(width: 40, height: 40)
+                .overlay(
+                    Text(String(name.prefix(1)))
+                        .font(.headline)
+                        .fontWeight(.bold)
+                        .foregroundColor(tierColor)
+                )
+            
+            VStack(alignment: .leading, spacing: 2) {
+                Text(name)
+                    .font(.subheadline)
+                    .fontWeight(.medium)
+                
+                HStack {
+                    Text(tier)
+                        .font(.caption)
+                        .padding(.horizontal, 6)
+                        .padding(.vertical, 2)
+                        .background(
+                            Capsule()
+                                .fill(tierColor.opacity(0.2))
+                        )
+                        .foregroundColor(tierColor)
+                    
+                    Text("€\(value)")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }
+            }
+            
+            Spacer()
+            
+            // Risk indicator
+            HStack {
+                Circle()
+                    .fill(riskColor)
+                    .frame(width: 8, height: 8)
+                
+                Text(riskLevel)
+                    .font(.caption2)
+                    .foregroundColor(riskColor)
+            }
+            
+            Image(systemName: "chevron.right")
+                .font(.caption)
+                .foregroundColor(.secondary)
+        }
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color(.systemGray6))
+        )
+    }
+    
+    var tierColor: Color {
+        switch tier {
+        case "Platinum": return .purple
+        case "Gold": return .orange
+        default: return .gray
+        }
+    }
+    
+    var riskColor: Color {
+        switch riskLevel {
+        case "High": return .red
+        case "Medium": return .orange
+        default: return .green
+        }
+    }
+}
+
 // Main ContentView with TabView
 struct ContentView: View {
     var body: some View {
@@ -170,7 +288,14 @@ struct ContentView: View {
                     Text("Charts")
                 }
             
-            // NIEUWE TAB: Live Data
+            NavigationView {
+                CustomerListView()
+            }
+            .tabItem {
+                Image(systemName: "person.3.fill")
+                Text("Customers")
+            }
+            
             LiveDataView()
                 .tabItem {
                     Image(systemName: "antenna.radiowaves.left.and.right")
